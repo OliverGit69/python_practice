@@ -1,4 +1,10 @@
-#Print every multiple of 5 between 1 and 100.
+'''Ask the user for a number.
+Print every number from 1 to that number that is divisible by both 3 and 5.
+'''
 
-for i in range(1 , 101 , 5):
-    print(i)
+num = int(input("Please Enter A Number: "))
+
+
+for i in range(1 , num+1):
+    if i % 3 == 0 and i % 5 == 0:
+        print(i)
