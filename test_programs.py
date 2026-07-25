@@ -1,10 +1,13 @@
-'''Ask the user for a number.
-Print every number from 1 to that number that is divisible by both 3 and 5.
-'''
+# Multiplication table (1 to 10) without using *
 
-num = int(input("Please Enter A Number: "))
+for i in range(1, 11):
+    for j in range(1, 11):
+        product = 0
 
+        # Multiply i and j using repeated addition
+        for _ in range(j):
+            product += i
 
-for i in range(1 , num+1):
-    if i % 3 == 0 and i % 5 == 0:
-        print(i)
+        print(f"{product:4}", end="")
+    print()
+    
