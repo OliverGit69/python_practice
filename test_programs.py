@@ -19,7 +19,7 @@ while True:
     elif choice == "2":
         amount = float(input("Enter deposit amount: ₹"))
 
-        if amount < 0:
+        if amount <= 0:
             print("Deposit amount cannot be negative.")
         else:
             balance += amount
