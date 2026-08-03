@@ -33,7 +33,7 @@ while True:
             print("Withdrawal amount cannot be negative.")
         elif amount <= balance:  
             balance -= amount
-            print(f"₹{amount} withdrawn successfully.")
+            print(f"₹{amount} withdrawn successfully.") 
             print(f"Remaining Balance: ₹{balance}")
         else:
             print("Insufficient balance.")
